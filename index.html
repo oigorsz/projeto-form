@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Formulário001</title>
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
@@ -13,29 +13,30 @@
         <p>Seja bem-vindo(a) ao sistema de cadastro da nossa rede de serviçõs</p>
     </header>
     <main>
-        <form action="form.php" method="post" autocomplete="off">
+        <form action="form.php" method="post" autocomplete="on">
             <fieldset>
                 <legend>Dados Pessoais</legend>
                 <div class="quest">
-                    <label for="inome">Nome: </label><input type="text" id="inome" placeholder="nome">
+                    <label for="inome" class="caixa">Nome: </label><input type="text" id="inome" placeholder="nome" required autocomplete="name">
                 </div>
                 <div class="quest">
-                    <label for="isobre">Sobrenome: </label><input type="text" id="isobre" placeholder="sobrenome">
+                    <label for="isobre" class="caixa">Sobrenome: </label><input type="text" id="isobre" placeholder="sobrenome" required>
                 </div>
                 <div class="quest">
-                    <input type="radio" name="sexo" id="isexo">
+                    <input type="radio" name="sexo" id="isexo" required>
                     <label for="isexo">Feminino</label>
-                    <input type="radio" name="sexo" id="isexo">
+                    <input type="radio" name="sexo" id="isexo" required>
                     <label for="isexo">Masculino</label>
                 </div>
                 <div class="quest">
-                    <label for="iage">Idade: </label><input type="number" min="0" max="100" step="1" >
+                    <label for="iage" class="caixa">Idade: </label><input type="number" id="iage"  step="1" min="1" max="100" required>
                 </div>
             </fieldset>
 
-            <input type="submit" value="Próximo" class="bot">
-            <input type="reset" value="Limpar" class="bot">
+           <input type="button" value="Próximo" class="bot" onclick="firstNext()">
+           
         </form>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

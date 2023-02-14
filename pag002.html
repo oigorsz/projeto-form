@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário003</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro SuperCash</h1>
+        <p>Precisamos de mais algumas informações... logo você terá acesso a todos os nosso recursos<p>
+    </header>
+    <main>
+        <form action="form.php" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Endereço</legend>
+                <div class="quest">
+                    <label for="ipais">Pais</label>
+                    <select name="pais" id="ipais">
+                        <option value="" id="vazio">----------</option>
+                        <option value="BR">Brasil</option>
+                        <option value="CN">China</option>
+                        <option value="US">Estados Unidos</option>
+                    </select>
+                </div>
+                <div class="quest">
+                    <label for="iest">Estado: </label><input type="text" name="estado" id="iest" placeholder="nome completo do Estado">
+                </div>
+                <div class="quest">
+                    <label for="icid">Cidade</label> <input type="text" name="cidade" id="icid" placeholder="nome completo da cidade">
+                </div>
+                
+            </fieldset>
+
+           <input type="button" value="Próximo" class="bot" onclick="secondNext()">
+           
+           <input type="button" value="Voltar" class="bot" onclick="back1()">
+        </form>
+    </main>
+    <script src="script.js"></script>
+    
+
+</body>
+</html>

@@ -42,10 +42,11 @@ header > p {
 main {
     font-family: Source Sans Pro;
     margin: auto;
+    margin-top: 20px;
     padding: 15px;
     background-color: #fff;
     max-width: 500px;
-    border-radius: 0px 0px 7px 7px; 
+    border-radius: 7px;
     
     text-align: center;
 }
@@ -74,6 +75,7 @@ div > input {
 }
 
 
+
 .bot {
     background-color: #4040b3;
     border: none;
@@ -82,6 +84,7 @@ div > input {
 
     font-size: 1rem;
     margin: 5px;
+    width: 80px;
 
     padding: 10px;
 
@@ -94,4 +97,8 @@ div > input {
     text-decoration: underline;
 }
 
+#final {
+    max-width: 500px;
+    height: 100px;
+}
 
