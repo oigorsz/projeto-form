@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Ubuntu&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #d5d5f1;
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #4040b3;
+    color: #fff;
+    padding: 10px;
+}
+
+header > h1 {
+    font-size: 2.5em;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.171);
+}
+
+header > p {
+    max-width: 380px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    font-size: 1.2em;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.171);
+}
+
+main {
+    font-family: Source Sans Pro;
+    margin: auto;
+    padding: 15px;
+    background-color: #fff;
+    max-width: 500px;
+    border-radius: 0px 0px 7px 7px; 
+    
+    text-align: center;
+}
+
+fieldset {
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 1.7rem;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+div > input {
+   padding: 5px 0px 5px 5px;
+}
+
+
+.quest {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+
+.bot {
+    background-color: #4040b3;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+
+    font-size: 1rem;
+    margin: 5px;
+
+    padding: 10px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bot:hover {
+    background-color: #0c0c46;
+    text-decoration: underline;
+}
+
+
